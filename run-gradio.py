@@ -24,5 +24,6 @@ title="Sketch Recognition"
 description="This Convolution Neural Network was trained on Google's " \
             "QuickDraw dataset with 345 classes. Try it by drawing a " \
             "lightbulb, radio, or anything you can think of!"
+thumbnail="https://github.com/gradio-app/machine-learning-experiments/raw/master/lightbulb.png?raw=true"
 gr.Interface(predict, "sketchpad", output, live=True, title=title,
-             description=description).launch()
+             description=description, thumbnail=thumbnail).launch()
